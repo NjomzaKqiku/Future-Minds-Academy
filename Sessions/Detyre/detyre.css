@@ -1,0 +1,9 @@
+.div h2{
+   background-color: black 
+}
+.div .text{
+    background-color: red;
+}
+.div+h5{
+    background-color: green;
+}

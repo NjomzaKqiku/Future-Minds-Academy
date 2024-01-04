@@ -1,0 +1,109 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.paddingX10 {
+    padding: 10px 10px;
+}
+
+.paddingX20{
+    padding: 20px;
+}
+.marginX100{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.marginX20{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.marginY10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.radius20{
+    border-radius: 20px;
+}
+
+.textAlign{
+    text-align: center;
+}
+
+/* HEADER */
+.list {
+    background-color: rgb(247, 204, 210);
+    display: inline-block;
+    border:3px solid transparent;
+}
+.list:hover{
+    background-color: rgb(247, 182, 190);
+    display: inline-block;
+    border: solid black 3px;
+}
+/* BODY */
+body {
+    background: url("../images/background.avif") no-repeat;
+    background-size: cover;
+    font-size: 15px;
+}
+
+.card {
+    background-color: aqua;
+    border: solid transparent 3px;
+}
+
+.card:hover{
+    background-color: rgb(3, 221, 221);
+    border: solid black 3px;
+}
+
+.card1{
+    background-color: rgb(218, 179, 218);
+    border: solid transparent 3px;
+}
+.card1:hover{
+    background-color: rgb(189, 157, 189);
+    border: solid black 3px;
+}
+.nestedCard{
+    background-color: white;
+}
+
+.BCollapse{
+    border-collapse: collapse;
+}
+
+.NoStyle{
+    list-style: none;
+}
+
+.card2{
+    background-color: rgb(255, 209, 240);
+    border: solid transparent 3px;
+}
+
+.card2:hover{
+    background-color: rgb(253, 183, 230);
+    border: solid black 3px;
+}
+
+.card3{
+    background-color: rgb(78, 255, 196);
+    border: solid transparent 3px;
+}
+
+.card3:hover{
+    background-color: rgb(77, 221, 173);
+    border: solid black 3px;
+}
+
+.card4{
+    background-color: gray;
+}
+
+
