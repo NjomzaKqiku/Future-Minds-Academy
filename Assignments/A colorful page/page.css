@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+*{
+    cursor: url()
+}
 
 body {
     background: url(./images/bg.jpg);
@@ -14,10 +17,17 @@ h1, p {
     background: linear-gradient(90deg, rgba(255, 31, 2, 1) 0%, rgba(228, 216, 24, 1) 40%, rgba(0, 212, 255, 0.804359243697479) 94%);
     margin: 20px 5px 20px 5px;
 }
-ul, a{
+ul{
     color: white;
     background-color: black;
     opacity: 50%;
-    margin: 20px 5px 20px 5px;
-    padding: 5px 20px 5px 20px;
+    margin: 5px;
+}
+
+li{
+    margin: 0px 0px 0px 40px;
+}
+
+a{
+    color: white;
 }

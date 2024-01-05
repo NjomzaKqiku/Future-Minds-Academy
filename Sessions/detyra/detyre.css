@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: o;
+}
+
+header {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: ;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    list-style: none;
+}

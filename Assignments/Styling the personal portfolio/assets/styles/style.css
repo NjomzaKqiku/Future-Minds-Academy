@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+*{
+    
+}
 
 .paddingX10 {
     padding: 10px 10px;
@@ -50,6 +53,7 @@ body {
     background: url("../images/background.avif") no-repeat;
     background-size: cover;
     font-size: 15px;
+    cursor: url(../images/rocket.png) 2 2, pointer; 
 }
 
 .card {
