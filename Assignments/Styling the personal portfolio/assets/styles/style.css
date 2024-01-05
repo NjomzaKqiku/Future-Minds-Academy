@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+*{
+    cursor: url(../images/rocket.png) 2 2;
+}
+
 .paddingX10 {
     padding: 10px 10px;
 }
