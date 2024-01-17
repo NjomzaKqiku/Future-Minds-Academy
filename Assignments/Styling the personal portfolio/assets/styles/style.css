@@ -3,11 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
-*{
-    cursor: url(../images/rocket.png) 2 2;
-}
-
 .paddingX10 {
     padding: 10px 10px;
 }
@@ -54,7 +49,7 @@ body {
     background: url("../images/background.avif") no-repeat;
     background-size: cover;
     font-size: 15px;
-    cursor: url(../images/rocket.png) 2 2, pointer; 
+    cursor: url('../images/rocketIcon.png') 90 2, pointer;
 }
 
 .card {

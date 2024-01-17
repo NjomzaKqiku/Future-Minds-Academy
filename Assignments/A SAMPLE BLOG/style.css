@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+.justifyCntCenter {
+    justify-content: center;
+}
+
+.textWhite {
+    color: white;
+}
+
+/* aside */
+aside {
+    background-color: rgb(54, 54, 78);
+    width: 15vw;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+p{
+    align-items: end;
+}
+
+h1 {
+    text-transform: uppercase;
+    align-items: end;
+}
+
+/* main */
+main {
+    width: 85vw;
+}
+
+.card {
+    height: 100vh;
+}
+
+button{
+    color: rgb(142, 142, 163);
+    background-color: transparent;
+    padding: 10px 20px;
+    border: solid 2px rgb(142, 142, 163);
+}
