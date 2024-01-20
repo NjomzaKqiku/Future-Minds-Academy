@@ -1,9 +1,48 @@
-.div h2{
-   background-color: black 
+*{
+    margin: 0;
+    padding: 0;
 }
-.div .text{
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+div{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+header{
     background-color: red;
 }
-.div+h5{
+
+.left{
+    background-color: yellow;
+}
+
+main{
+    padding: 3rem;
+    gap: 2rem;
     background-color: green;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+section{
+    background-color: grey;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    background-color: aqua;
+}
+
+footer{
+    background-color: black;
 }

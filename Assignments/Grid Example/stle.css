@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+header{
+    background-color: peachpuff;
+    display: grid;
+    align-items: center;
+    padding-left: 10px;
+}
+
+aside{
+    background-color: pink;
+    padding: 20px;
+}
+
+main{
+    background-color: yellowgreen;
+    padding: 20px;
+}
+
+footer{
+    background-color: mediumslateblue;
+    display: grid;
+    align-items: center;
+    padding-left: 10px;
+}
