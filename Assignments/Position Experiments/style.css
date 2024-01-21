@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    margin: 50px;
+    background-color: white;
+    -webkit-box-shadow: -1px 1px 9px 5px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: -1px 1px 9px 5px rgba(0, 0, 0, 0.48);
+    box-shadow: -1px 1px 9px 5px rgba(0, 0, 0, 0.48);
+    position: relative;
+    width: 40%;
+}
+
+h1{
+    position: relative;
+    top: -25px;
+    display: inline;
+}
+
+button{
+    display: inline;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    border-radius: 100px;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+}
+
+p{
+    text-align: center;
+}
+
+.card1{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 280px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    -webkit-box-shadow: -1px 1px 9px 5px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: -1px 1px 9px 5px rgba(0, 0, 0, 0.48);
+    box-shadow: -1px 1px 9px 5px rgba(0, 0, 0, 0.48);
+    border-radius: 10%;
+}
+
+
+figcaption{
+    text-align: center;
+}
