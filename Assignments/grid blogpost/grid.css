@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -11,11 +11,11 @@
     align-items: end;
 }
 
-.spBetween{
+.spBetween {
     justify-content: space-between;
 }
 
-.gap{
+.gap {
     gap: 2em;
 }
 
@@ -23,39 +23,44 @@
     color: white;
 }
 
-.textBlue{
+.textBlue {
     color: blue;
 }
 
+.marginTop50{
+    margin-top: 50px;
+}
+
 /* body */
-body{
+body {
+    height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: grid;
-    grid-template-columns: 30% 1fr ;
+    grid-template-columns: auto 1fr;
 }
 
 /* aside */
 .cardAside {
-    height: 100vh;
     background-color: rgb(30, 30, 58);
-    width: 15vw;
     display: grid;
-    align-items: end;
-    justify-content: center;
+    align-items: center;
+    justify-content: end;
     padding: 20px;
     grid-column: 1 / 2;
+    text-align: end;
 }
 
 .cardHeading {
     text-transform: uppercase;
-    align-items: end;
     font-size: 2em;
+    grid-row: 2 / 3;
+    display: grid;
 }
 
 .cardParagraph {
     color: rgb(142, 142, 163);
     font-size: 2em;
-
+    display: grid;
 }
 
 button {
@@ -64,43 +69,43 @@ button {
     padding: 10px 20px;
     border: solid 2px rgb(142, 142, 163);
 }
+
 /* main */
 
 main {
-    width: 85vw;
     padding: 50px;
     grid-column: 2 / 3;
 }
 
-.cardMain{
+.cardMain {
     margin-top: 10px;
 }
 
-.mainHeading{
+.mainHeading {
     color: gray;
 }
 
-.cardInfo{
+.cardInfo {
     padding: 20px 0px;
 }
 
-.asideImg{
+.asideImg {
     width: 50px;
     border-radius: 50px;
 }
 
-.css{
+.css {
     background-color: green;
     padding: 2px 10px;
     opacity: 60%;
 }
 
-.html{
+.html {
     background-color: lightskyblue;
     padding: 2px 10px;
 }
 
-.java{
+.java {
     background-color: red;
     padding: 2px 10px;
     opacity: 70%;
