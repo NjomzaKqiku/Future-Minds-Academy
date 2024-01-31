@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    padding: 50px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+label {
+    visibility: hidden;
+    transform: translateY(3px);
+    transition: transform .5s ease;
+
+}
+
+input:focus+label {
+    visibility: visible;
+    transform: translateY(0px);
+
+}
+
+button {
+    padding: 0px 5px;
+    background-color: blue;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+}
+
+button:focus+img{
+    transform: rotate(180deg);
+    animation: infinite;
+}
+
