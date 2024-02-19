@@ -41,7 +41,7 @@
     padding: 10px;
 }
 
-.paddingY10{
+.paddingY10 {
     padding: 10px 0px;
 }
 
@@ -73,16 +73,23 @@
     margin-bottom: 50px;
 }
 
-.fontSize2 {
-    font-size: 2em
+.fontSize2{
+    font-size: 2em;
+}
+
+.hotelPrice{
+    font-size: 2em;
 }
 
 /* body */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
-    display: grid;
     grid-template-columns: auto 1fr;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-color: lightgray;
 }
 
@@ -91,7 +98,7 @@
     background: url(./images/sidebar-1.jpg);
     background-color: rgba(0, 0, 0, 0.637);
     background-blend-mode: color;
-    padding: 20px;
+    padding: 1rem;
     overflow-y: scroll;
 }
 
@@ -103,6 +110,7 @@
 
 .asideList {
     margin: 20px 0;
+    grid-template-columns: auto 1fr auto;
 }
 
 .asideList:hover:not(.active, .logo, .profile) {
@@ -185,10 +193,15 @@
     border-radius: 50%;
 }
 
+.header2 {
+    display: none;
+}
+
 /* main */
 
 .mainContainer {
     padding: 20px 50px;
+    overflow-y: scroll;
 }
 
 .mainCard {
@@ -251,18 +264,32 @@ iframe {
     background-color: cornflowerblue;
 }
 
-.listingImage{
-    margin-top: -25px;
+.listingImage {
+    transform: translateY(-25px);
     transition-duration: 300ms;
 }
 
-.cardHeader:hover .listingImageMenu{
-    display: block;
+.cardHeader {
+    position: relative;
 }
 
 .listingImageMenu {
-    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    visibility: hidden;
 }
+
+.cardHeader:hover .listingImage {
+    transform: translateY(-45px);
+
+}
+
+.cardHeader:hover .listingImageMenu {
+    visibility: visible;
+}
+
 
 .imageWidth {
     width: 100%;
@@ -275,6 +302,78 @@ iframe {
 
 /* footer */
 
-footer{
+footer {
     padding: 50px 0px 40px 0px;
+}
+
+.footerDiv{
+    flex-wrap: wrap;
+}
+
+/* responsive */
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .asideCard {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .salesDiv {
+        grid-template-columns: 1fr;
+    }
+
+    .listingCardContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .header1 {
+        display: none;
+    }
+
+    .header2 {
+        display: flex;
+    }
+}
+
+/* PHONE */
+
+@media (max-width: 600px){
+    .asideCard {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .salesDiv {
+        grid-template-columns: 1fr;
+    }
+
+    .cardContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .listingCardContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .header1 {
+        display: none;
+    }
+
+    .header2 {
+        display: flex;
+    }
+
+    .hotelPrice{
+        font-size: 1em;
+    }
+
 }

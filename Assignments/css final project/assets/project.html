@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- STYLE -->
     <link rel="stylesheet" href="project.css">
-    <!-- FONT -->
 </head>
 
 <body class="container dGrid">
@@ -128,42 +131,49 @@
     </aside>
     <div class="mainContainer">
         <header>
-            <div class="dFlex alignCenter spBetween gap1">
-                <div class="dFlex alignCenter gap1">
-                    <figure title="See more" class="iconShadowbox pointer dFlex justifyContentCenter alignCenter">
-                        <img src="./icons/header/more.svg" alt="menu icon">
-                    </figure>
-                    <p>Dashboard</p>
-                </div>
-                <div class="dFlex gap10px alignCenter">
-                    <form class="dFlex alignCenter">
-                        <input title="Search" class="searchBar" placeholder="Search" type="search" id="search">
-
-                        <label for="search">
-                            <figure title="Search" class="iconShadowbox pointer dFlex justifyContentCenter alignCenter">
-                                <img src="./icons/header/search.svg" alt="search icon">
-                            </figure>
-                        </label>
-                    </form>
-                    <figure title="Dashboard" class="pointer"><img src="./icons/header/headerDashboard.svg"
-                            alt="dashboard icon"></figure>
-                    <div class="notification borderRadius3 pointer">
-                        <figure title="Notifications" class="pointer"><img src="./icons/header/notifications.svg"
-                                alt="notification icon">
+            <section class="header1">
+                <div class="dFlex alignCenter spBetween gap1">
+                    <div class="dFlex alignCenter gap1">
+                        <figure title="See more" class="iconShadowbox pointer dFlex justifyContentCenter alignCenter">
+                            <img src="./icons/header/more.svg" alt="menu icon">
                         </figure>
-                        <p class="notificationsNumber textAlignCenter textWhite">5</p>
-                        <div class="notificationsList">
-                            <p>John Doe sent you a message</p>
-                            <p>Someone viewed your profile</p>
-                            <p>John Doe sent you a message</p>
-                            <p>Someone viewed your profile</p>
-                            <p>Another notification</p>
-                        </div>
+                        <p>Dashboard</p>
                     </div>
-                    <figure title="Profile" class="pointer"><img src="./icons/header/headerAvatar.svg"
-                            alt="avatar icon"></figure>
+                    <div class="dFlex gap10px alignCenter">
+                        <form class="dFlex alignCenter">
+                            <input title="Search" class="searchBar" placeholder="Search" type="search" id="search">
+
+                            <label for="search">
+                                <figure title="Search"
+                                    class="iconShadowbox pointer dFlex justifyContentCenter alignCenter">
+                                    <img src="./icons/header/search.svg" alt="search icon">
+                                </figure>
+                            </label>
+                        </form>
+                        <figure title="Dashboard" class="pointer"><img src="./icons/header/headerDashboard.svg"
+                                alt="dashboard icon"></figure>
+                        <div class="notification borderRadius3 pointer">
+                            <figure title="Notifications" class="pointer"><img src="./icons/header/notifications.svg"
+                                    alt="notification icon">
+                            </figure>
+                            <p class="notificationsNumber textAlignCenter textWhite">5</p>
+                            <div class="notificationsList">
+                                <p>John Doe sent you a message</p>
+                                <p>Someone viewed your profile</p>
+                                <p>John Doe sent you a message</p>
+                                <p>Someone viewed your profile</p>
+                                <p>Another notification</p>
+                            </div>
+                        </div>
+                        <figure title="Profile" class="pointer"><img src="./icons/header/headerAvatar.svg"
+                                alt="avatar icon"></figure>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section class="header2 dFlex spBetween">
+                <h2>Dashboard</h2>
+                <figure><img class="pointer" src="icons/header/more.svg" alt="more icon"></figure>
+            </section>
         </header>
         <main>
             <div class="mainCard borderRadius3 marginTop100">
@@ -307,15 +317,15 @@
             <div class="listingCardContainer">
                 <div class="dGrid listingCardContainer">
                     <div class="card borderRadius3 padding10">
-                        <div class="cardHeader">
-                            <figure class=" dGrid justifyContentCenter"><img
-                                    class="pointer listingImage borderRadius3 imageWidth " src="./images/card-1.jpeg"
-                                    alt="mountain hotel">
-                            </figure>
-                            <figure class="dFlex gap1 listingImageMenu justifyContentCenter">
+                        <div class="cardHeader ">
+                            <figure class="dFlex gap1 listingImageMenu justifyContentCenter alignCenter">
                                 <img class="pointer" title="View more" src="./icons/cards/view.svg" alt="viw more icon">
                                 <img class="pointer" title="Edit" src="./icons/cards/edit.svg" alt="edit icon">
                                 <img class="pointer" title="Delete" src="./icons/cards/delete.svg" alt="delete icon">
+                            </figure>
+                            <figure class=" dGrid justifyContentCenter"><img
+                                    class="pointer listingImage borderRadius3 imageWidth " src="./images/card-1.jpeg"
+                                    alt="mountain hotel">
                             </figure>
                         </div>
                         <h2 class="textAlignCenter">Cozy Apartment</h2>
@@ -326,7 +336,7 @@
                         </p>
                         <hr class="textGray">
                         <div class="dFlex padding10 spBetween alignCenter">
-                            <p class="fontSize2">$899/Night</p>
+                            <p class="hotelPrice">$899/Night</p>
                             <div class="dFlex alignCenter">
                                 <figure><img src="./icons/cards/location.svg" alt="location icon"></figure>
                                 <p class="textGray">Barcelona, Spain</p>
@@ -334,15 +344,15 @@
                         </div>
                     </div>
                     <div class="card borderRadius3 padding10">
-                        <figure class=" dGrid justifyContentCenter"><img
-                                class="pointer listingImage imageWidth borderRadius3 " src="./images/card-2.jpeg"
-                                alt="office hotel">
-                        </figure>
-                        <div>
-                            <figure class="dFlex gap1 listingImageMenu justifyContentCenter">
+                        <div class="cardHeader ">
+                            <figure class="dFlex gap1 listingImageMenu justifyContentCenter alignCenter">
                                 <img class="pointer" title="View more" src="./icons/cards/view.svg" alt="viw more icon">
                                 <img class="pointer" title="Edit" src="./icons/cards/edit.svg" alt="edit icon">
                                 <img class="pointer" title="Delete" src="./icons/cards/delete.svg" alt="delete icon">
+                            </figure>
+                            <figure class=" dGrid justifyContentCenter"><img
+                                    class="pointer listingImage borderRadius3 imageWidth " src="./images/card-2.jpeg"
+                                    alt="office Studio hotel">
                             </figure>
                         </div>
                         <h2 class="textAlignCenter">Office Studio</h2>
@@ -353,7 +363,7 @@
                         </p>
                         <hr class="textGray">
                         <div class="dFlex padding10 spBetween alignCenter">
-                            <p class="fontSize2">$1.119/Night</p>
+                            <p class="hotelPrice">$1.119/Night</p>
                             <div class="dFlex alignCenter">
                                 <figure><img src="./icons/cards/location.svg" alt="location icon"></figure>
                                 <p class="textGray">London, UK</p>
@@ -361,15 +371,15 @@
                         </div>
                     </div>
                     <div class="card borderRadius3 padding10">
-                        <figure class=" dGrid justifyContentCenter"><img
-                                class="imageWidth pointer listingImage borderRadius3" src="./images/card-3.jpeg"
-                                alt="hotel room">
-                        </figure>
-                        <div>
-                            <figure class="dFlex gap1 listingImageMenu justifyContentCenter">
+                        <div class="cardHeader ">
+                            <figure class="dFlex gap1 listingImageMenu justifyContentCenter alignCenter">
                                 <img class="pointer" title="View more" src="./icons/cards/view.svg" alt="viw more icon">
                                 <img class="pointer" title="Edit" src="./icons/cards/edit.svg" alt="edit icon">
                                 <img class="pointer" title="Delete" src="./icons/cards/delete.svg" alt="delete icon">
+                            </figure>
+                            <figure class=" dGrid justifyContentCenter"><img
+                                    class="pointer listingImage borderRadius3 imageWidth " src="./images/card-3.jpeg"
+                                    alt="castle hotel">
                             </figure>
                         </div>
                         <h2 class="textAlignCenter">Beautiful Castle</h2>
@@ -380,7 +390,7 @@
                         </p>
                         <hr class="textGray">
                         <div class="dFlex padding10 spBetween alignCenter">
-                            <p class="fontSize2">$459/Night</p>
+                            <p class="hotelPrice">$459/Night</p>
                             <div class="dFlex alignCenter">
                                 <figure><img src="./icons/cards/location.svg" alt="location icon"></figure>
                                 <p class="textGray">Milan, Italy</p>
@@ -392,7 +402,7 @@
         </main>
         <hr class="textGray">
         <footer class="dFlex spBetween">
-            <div class="dFlex gap1">
+            <div class="dFlex gap1 footerDiv">
                 <h3 class="pointer"><b>HOME</b></h3>
                 <h3 class="pointer"><b>COMPANY</b></h3>
                 <h3 class="pointer"><b>PORTFOLIO</b></h3>
