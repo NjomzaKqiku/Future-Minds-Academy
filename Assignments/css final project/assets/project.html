@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="project.css">
+    <!-- FONT -->
+</head>
+
+<body class="container dGrid">
+    <aside class="asideCard textWhite">
+        <div class="dFlex spBetween padding10 asideList borderRadius3 logo">
+            <p>CP</p>
+            <p>COOL PAGE</p>
+        </div>
+        <hr>
+        <div class="pointer dFlex spBetween padding10 alignCenter asideList profile">
+            <div class="dFlex alignCenter gap10px">
+                <figure>
+                    <img class="avatar" src="./images/avatar.jpg" alt="avatar">
+                </figure>
+                <p>John Doe</p>
+            </div>
+            <figure>
+                <img src="./icons/asides/expandMore.svg" alt="expand more icon">
+            </figure>
+        </div>
+        <hr>
+        <div class="active pointer dFlex spBetween padding10 alignCenter asideList borderRadius3">
+            <div class="dFlex alignCenter gap10px">
+                <figure>
+                    <img src="./icons/asides/asideDashboard.svg" alt="dashboard icon">
+                </figure>
+                <p>Dashboard</p>
+            </div>
+        </div>
+        <div class="dFlex pointer spBetween padding10 alignCenter asideList">
+            <div class="dFlex alignCenter gap10px">
+                <figure>
+                    <img src="./icons/asides/pages.svg" alt="pages icon">
+                </figure>
+                <p>Pages</p>
+            </div>
+            <figure>
+                <img src="./icons/asides/expandMore.svg" alt="expand more icon">
+            </figure>
+        </div>
+        <div class="dFlex pointer spBetween padding10 alignCenter asideList">
+            <div class="dFlex alignCenter gap10px">
+                <figure>
+                    <img src="./icons/asides/components.svg" alt="components icon">
+                </figure>
+                <p>Components</p>
+            </div>
+            <figure>
+                <img src="./icons/asides/expandMore.svg" alt="expand more icon">
+            </figure>
+        </div>
+        <div class="dFlex pointer spBetween padding10 alignCenter asideList">
+            <div class="dFlex alignCenter gap10px">
+                <figure>
+                    <img src="./icons/asides/form.svg" alt="Forms icon">
+                </figure>
+                <p>Forms</p>
+            </div>
+            <figure>
+                <img src="./icons/asides/expandMore.svg" alt="expand more icon">
+            </figure>
+        </div>
+        <div class="dFlex pointer spBetween padding10 alignCenter asideList">
+            <div class="dFlex alignCenter gap10px">
+                <figure>
+                    <img src="./icons/asides/table.svg" alt="tables icon">
+                </figure>
+                <p>Tables</p>
+            </div>
+            <figure>
+                <img src="./icons/asides/expandMore.svg" alt="expand more icon">
+            </figure>
+        </div>
+        <div class="dFlex pointer spBetween padding10 alignCenter asideList">
+            <div class="dFlex alignCenter gap10px">
+                <figure>
+                    <img src="./icons/asides/map.svg" alt="map icon">
+                </figure>
+                <p>Maps</p>
+            </div>
+            <figure>
+                <img src="./icons/asides/expandMore.svg" alt="expand more icon">
+            </figure>
+        </div>
+        <div class="dFlex pointer spBetween padding10 alignCenter asideList">
+            <div class="dFlex alignCenter gap10px">
+                <figure>
+                    <img src="./icons/asides/widget.svg" alt="widget icon">
+                </figure>
+                <p>Widgets</p>
+            </div>
+            <figure>
+                <img src="./icons/asides/expandMore.svg" alt="expand more icon">
+            </figure>
+        </div>
+        <div class="dFlex pointer spBetween padding10 alignCenter asideList">
+            <div class="dFlex alignCenter gap10px">
+                <figure>
+                    <img src="./icons/asides/chart.svg" alt="chart icon">
+                </figure>
+                <p>Charts</p>
+            </div>
+            <figure>
+                <img src="./icons/asides/expandMore.svg" alt="expand more icon">
+            </figure>
+        </div>
+        <div class="dFlex pointer spBetween padding10 alignCenter asideList">
+            <div class="dFlex alignCenter gap10px">
+                <figure>
+                    <img src="./icons/asides/calendar.svg" alt="calendar icon">
+                </figure>
+                <p>Calendar</p>
+            </div>
+            <figure>
+                <img src="./icons/asides/expandMore.svg" alt="expand more icon">
+            </figure>
+        </div>
+    </aside>
+    <div class="mainContainer">
+        <header>
+            <div class="dFlex alignCenter spBetween gap1">
+                <div class="dFlex alignCenter gap1">
+                    <figure title="See more" class="iconShadowbox pointer dFlex justifyContentCenter alignCenter">
+                        <img src="./icons/header/more.svg" alt="menu icon">
+                    </figure>
+                    <p>Dashboard</p>
+                </div>
+                <div class="dFlex gap10px alignCenter">
+                    <form class="dFlex alignCenter">
+                        <input title="Search" class="searchBar" placeholder="Search" type="search" id="search">
+
+                        <label for="search">
+                            <figure title="Search" class="iconShadowbox pointer dFlex justifyContentCenter alignCenter">
+                                <img src="./icons/header/search.svg" alt="search icon">
+                            </figure>
+                        </label>
+                    </form>
+                    <figure title="Dashboard" class="pointer"><img src="./icons/header/headerDashboard.svg"
+                            alt="dashboard icon"></figure>
+                    <div class="notification borderRadius3 pointer">
+                        <figure title="Notifications" class="pointer"><img src="./icons/header/notifications.svg"
+                                alt="notification icon">
+                        </figure>
+                        <p class="notificationsNumber textAlignCenter textWhite">5</p>
+                        <div class="notificationsList">
+                            <p>John Doe sent you a message</p>
+                            <p>Someone viewed your profile</p>
+                            <p>John Doe sent you a message</p>
+                            <p>Someone viewed your profile</p>
+                            <p>Another notification</p>
+                        </div>
+                    </div>
+                    <figure title="Profile" class="pointer"><img src="./icons/header/headerAvatar.svg"
+                            alt="avatar icon"></figure>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="mainCard borderRadius3 marginTop100">
+                <div class="dFlex padding10 gap10px">
+                    <figure class="languageIcon cardIcon cardIcon borderRadius3"><img src="./icons/cards/language.svg" alt=""></figure>
+                    <h1>Global Sales by Top Locations</h1>
+                </div>
+                <div class="salesDiv dGrid ">
+                    <div class="salesCard">
+                        <div class="dFlex spBetween salesList gap1">
+                            <div class="dFlex gap10px">
+                                <figure><img width="30px" src="./flags/us.svg" alt="usa flag"></figure>
+                                <p>USA</p>
+                            </div>
+                            <div class="dFlex gap10px">
+                                <p>2.930</p>
+                                <p>53.23%</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dFlex spBetween salesList gap1">
+                            <div class="dFlex gap10px">
+                                <figure><img width="30px" src="./flags/germany.svg" alt="germany flag"></figure>
+                                <p>Germany</p>
+                            </div>
+                            <div class="dFlex gap10px">
+                                <p>760</p>
+                                <p>20.43%</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dFlex spBetween salesList gap1">
+                            <div class="dFlex gap10px">
+                                <figure><img width="30px" src="./flags/albania.svg" alt="albania flag"></figure>
+                                <p>Albania</p>
+                            </div>
+                            <div class="dFlex gap10px">
+                                <p>1.300</p>
+                                <p>4.34%</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dFlex spBetween salesList gap1">
+                            <div class="dFlex gap10px">
+                                <figure><img width="30px" src="./flags/italy.svg" alt="italy flag"></figure>
+                                <p>Italy</p>
+                            </div>
+                            <div class="dFlex gap10px">
+                                <p>690</p>
+                                <p>20.32%</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dFlex spBetween salesList gap1">
+                            <div class="dFlex gap10px">
+                                <figure><img width="30px" src="./flags/kosovo.svg" alt="kosova flag"></figure>
+                                <p>Kosova</p>
+                            </div>
+                            <div class="dFlex gap10px">
+                                <p>2.930</p>
+                                <p>53.23%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47094.33722716122!2d21.42101052705403!3d42.46186414385972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13548d28fe87b91d%3A0xab45b8a9d06a705!2sGjilan!5e0!3m2!1sen!2s!4v1708016251544!5m2!1sen!2s"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer dGrid marginTop100">
+                <div class="card borderRadius3">
+                    <div class=" couchCard dFlex spBetween padding10">
+                        <figure class="couchIcon cardIcon borderRadius3"><img src="./icons/cards/couch.svg"
+                                alt="couch icon">
+                        </figure>
+                        <div>
+                            <p class="textGray">Bookings</p>
+                            <p class="fontSize2">184</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="dFlex padding10 gap10px alignCenter">
+                        <figure><img class="textGray" src="./icons/cards/warning.svg" alt=""></figure>
+                        <p class="textGray">Get more space</p>
+                    </div>
+                </div>
+                <div class="card borderRadius3">
+                    <div class=" padding10 dFlex spBetween">
+                        <figure class="cardIcon equalizerCard borderRadius3"><img src="./icons/cards/equalizer.svg"
+                                alt="equalizer icon">
+                        </figure>
+                        <div>
+                            <p class="textGray">Website visits</p>
+                            <p class="fontSize2">75.521</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="dFlex padding10 gap10px alignCenter">
+                        <figure class="textGray"><img src="./icons/cards/tracked.svg" alt="tag icon"></figure>
+                        <p class="textGray">Tracked from Google analytics</p>
+                    </div>
+                </div>
+                <div class="card borderRadius3">
+                    <div class=" padding10 dFlex spBetween">
+                        <figure class="cardIcon storefrontIcon borderRadius3"><img src="./icons/cards/storefront.svg"
+                                alt="store icon">
+                        </figure>
+                        <div>
+                            <p class="textGray">Revenue</p>
+                            <p class="fontSize2">$34.245</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="dFlex padding10 gap10px alignCenter">
+                        <figure><img src="./icons/cards/calendar.svg" alt="calendar icon"></figure>
+                        <p class="textGray textAlignCenter">Last 24 hours</p>
+                    </div>
+                </div>
+                <div class="card borderRadius3">
+                    <div class="couchCard padding10 dFlex spBetween">
+                        <figure class="PublicIcon cardIcon borderRadius3"><img src="./icons/cards/public.svg"
+                                alt="globe icon">
+                        </figure>
+                        <div>
+                            <p class="textGray">Followers</p>
+                            <p class="fontSize2">+245</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="dFlex padding10 gap10px alignCenter">
+                        <figure><img src="./icons/cards/update.svg" alt="update icon"></figure>
+                        <p class="textGray">Just updated</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="marginBottom50">Manage Listings</h1>
+            <div class="listingCardContainer">
+                <div class="dGrid listingCardContainer">
+                    <div class="card borderRadius3 padding10">
+                        <figure class=" dGrid justifyContentCenter"><img class="pointer listingImage borderRadius3 imageWidth " src="./images/card-1.jpeg"
+                                alt="mountain hotel">
+                        </figure>
+                        <div>
+                            <figure class="dFlex gap1 listingImageMenu justifyContentCenter">
+                                <img class="pointer" title="View more" src="./icons/cards/view.svg" alt="viw more icon">
+                                <img class="pointer" title="Edit" src="./icons/cards/edit.svg" alt="edit icon">
+                                <img class="pointer" title="Delete" src="./icons/cards/delete.svg" alt="delete icon">
+                            </figure>
+                        </div>
+                        <h2 class="textAlignCenter">Cozy Apartment</h2>
+                        <p class="textAlignCenter padding10 textGray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, consequatur, deserunt ab
+                            repellendus dolore dicta laboriosam culpa id sequi provident a. In odit cumque saepe aperiam
+                            laborum, neque alias repudiandae!
+                        </p>
+                        <hr class="textGray">
+                        <div class="dFlex padding10 spBetween alignCenter">
+                            <p class="fontSize2">$899/Night</p>
+                            <div class="dFlex alignCenter">
+                                <figure><img src="./icons/cards/location.svg" alt="location icon"></figure>
+                                <p class="textGray">Barcelona, Spain</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card borderRadius3 padding10">
+                        <figure class=" dGrid justifyContentCenter"><img class="pointer listingImage imageWidth borderRadius3 " src="./images/card-2.jpeg"
+                                alt="office hotel">
+                        </figure>
+                        <div>
+                            <figure class="dFlex gap1 listingImageMenu justifyContentCenter">
+                                <img class="pointer" title="View more" src="./icons/cards/view.svg" alt="viw more icon">
+                                <img class="pointer" title="Edit" src="./icons/cards/edit.svg" alt="edit icon">
+                                <img class="pointer" title="Delete" src="./icons/cards/delete.svg" alt="delete icon">
+                            </figure>
+                        </div>
+                        <h2 class="textAlignCenter">Office Studio</h2>
+                        <p class="textAlignCenter padding10 textGray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, consequatur, deserunt ab
+                            repellendus dolore dicta laboriosam culpa id sequi provident a. In odit cumque saepe aperiam
+                            laborum, neque alias repudiandae!
+                        </p>
+                        <hr class="textGray">
+                        <div class="dFlex padding10 spBetween alignCenter">
+                            <p class="fontSize2">$1.119/Night</p>
+                            <div class="dFlex alignCenter">
+                                <figure><img src="./icons/cards/location.svg" alt="location icon"></figure>
+                                <p class="textGray">London, UK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card borderRadius3 padding10">
+                        <figure class=" dGrid justifyContentCenter"><img class="imageWidth pointer listingImage borderRadius3" src="./images/card-3.jpeg"
+                                alt="hotel room">
+                        </figure>
+                        <div>
+                            <figure class="dFlex gap1 listingImageMenu justifyContentCenter">
+                                <img class="pointer" title="View more" src="./icons/cards/view.svg" alt="viw more icon">
+                                <img class="pointer" title="Edit" src="./icons/cards/edit.svg" alt="edit icon">
+                                <img class="pointer" title="Delete" src="./icons/cards/delete.svg" alt="delete icon">
+                            </figure>
+                        </div>
+                        <h2 class="textAlignCenter">Beautiful Castle</h2>
+                        <p class="textAlignCenter padding10 textGray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, consequatur, deserunt ab
+                            repellendus dolore dicta laboriosam culpa id sequi provident a. In odit cumque saepe aperiam
+                            laborum, neque alias repudiandae!
+                        </p>
+                        <hr class="textGray">
+                        <div class="dFlex padding10 spBetween alignCenter">
+                            <p class="fontSize2">$459/Night</p>
+                            <div class="dFlex alignCenter">
+                                <figure><img src="./icons/cards/location.svg" alt="location icon"></figure>
+                                <p class="textGray">Milan, Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <hr class="textGray">
+        <footer class="dFlex spBetween">
+            <div class="dFlex gap1">
+                <h3 class="pointer"><b>HOME</b></h3>
+                <h3 class="pointer"><b>COMPANY</b></h3>
+                <h3 class="pointer"><b>PORTFOLIO</b></h3>
+                <h3 class="pointer"><b>BLOG</b></h3>
+            </div>
+            <p>© <i>John Doe</i>, 2023</p>
+        </footer>
+    </div>
+</body>
+
+</html>

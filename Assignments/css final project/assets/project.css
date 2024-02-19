@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* globaL */
+
+.dFlex {
+    display: flex;
+}
+
+.dGrid {
+    display: grid;
+}
+
+.spBetween {
+    justify-content: space-between;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.textWhite {
+    color: white;
+}
+
+.textGray {
+    color: gray;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.marginX10 {
+    margin: 0px 10px;
+}
+
+.gap1 {
+    gap: 1rem;
+}
+
+.gap10px {
+    gap: 10px;
+}
+
+.borderRadius3 {
+    border-radius: 3px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.marginTop100 {
+    margin-top: 100px;
+}
+
+.marginBottom50 {
+    margin-bottom: 50px;
+}
+
+.fontSize2 {
+    font-size: 2em
+}
+
+/* body */
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: lightgray;
+}
+
+/* aside */
+.asideCard {
+    background: url(./images/sidebar-1.jpg);
+    background-color: rgba(0, 0, 0, 0.637);
+    background-blend-mode: color;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+
+.asideList {
+    margin: 20px 0;
+}
+
+.asideList:hover:not(.active, .logo, .profile) {
+    background-color: rgba(211, 211, 211, 0.2);
+}
+
+.active {
+    background-color: red;
+}
+
+
+/* header */
+
+.iconShadowbox {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 25px 8px rgba(0, 0, 0, 0.2);
+}
+
+.searchBar {
+    padding: 7px;
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: solid darkgray;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.searchBar:focus {
+    padding: 7px;
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: solid purple;
+}
+
+
+.notification {
+    position: relative;
+}
+
+.notificationsNumber {
+    position: absolute;
+    top: -7px;
+    left: 7px;
+}
+
+
+.notification:hover .notificationsList {
+    display: block;
+    cursor: pointer;
+}
+
+.notificationsList {
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: none;
+    background-color: white;
+    width: 250px;
+}
+
+.notificationsList p {
+    padding: 10px;
+}
+
+.notificationsList p:hover {
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+}
+
+.notificationsNumber {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border: solid 2px white;
+    border-radius: 50%;
+}
+
+/* main */
+
+.mainContainer {
+    padding: 20px 50px;
+}
+
+.mainCard {
+    background-color: white;
+}
+
+.languageIcon {
+    background-color: green;
+}
+
+.salesDiv {
+    grid-template-columns: auto 1fr;
+    padding: 20px;
+}
+
+.salesCard {
+    padding: 20px;
+}
+
+.salesList {
+    padding: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 5px;
+}
+
+.cardContainer {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+.cardIcon {
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: -25px;
+    margin-left: 10px;
+}
+
+.couchIcon {
+    background-color: orangered;
+}
+
+.equalizerCard {
+    background-color: mediumvioletred;
+}
+
+.storefrontIcon {
+    background-color: green;
+}
+
+.PublicIcon {
+    background-color: cornflowerblue;
+}
+
+.listingImage{
+    margin-top: -25px;
+    transition-duration: 300ms;
+}
+
+.listingImage:hover .listingImageMenu{
+
+}
+
+.listingImageMenu{
+}
+
+.imageWidth {
+    width: 325px;
+}
+
+.listingCardContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+/* footer */
+
+footer{
+    padding: 50px 0px 40px 0px;
+}
