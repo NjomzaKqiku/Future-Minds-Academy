@@ -41,6 +41,10 @@
     padding: 10px;
 }
 
+.paddingY10{
+    padding: 10px 0px;
+}
+
 .marginX10 {
     margin: 0px 10px;
 }
@@ -123,20 +127,17 @@
 .searchBar {
     padding: 7px;
     background-color: transparent;
-    border-top: transparent;
-    border-right: transparent;
-    border-left: transparent;
+    border: transparent;
     border-bottom: solid darkgray;
+    outline: none;
     transition-duration: 300ms;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in-out;
 }
 
 .searchBar:focus {
     padding: 7px;
     background-color: transparent;
-    border-top: transparent;
-    border-right: transparent;
-    border-left: transparent;
+    border: transparent;
     border-bottom: solid purple;
 }
 
@@ -151,12 +152,6 @@
     left: 7px;
 }
 
-
-.notification:hover .notificationsList {
-    display: block;
-    cursor: pointer;
-}
-
 .notificationsList {
     padding: 5px;
     position: absolute;
@@ -165,6 +160,11 @@
     display: none;
     background-color: white;
     width: 250px;
+}
+
+.notification:hover .notificationsList {
+    display: block;
+    cursor: pointer;
 }
 
 .notificationsList p {
@@ -220,7 +220,7 @@ iframe {
 .card {
     background-color: white;
     margin-bottom: 50px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .cardContainer {
@@ -232,8 +232,7 @@ iframe {
     padding: 20px;
     width: 20px;
     height: 20px;
-    margin-top: -25px;
-    margin-left: 10px;
+    margin-top: -30px;
 }
 
 .couchIcon {
@@ -257,15 +256,16 @@ iframe {
     transition-duration: 300ms;
 }
 
-.listingImage:hover .listingImageMenu{
-
+.cardHeader:hover .listingImageMenu{
+    display: block;
 }
 
-.listingImageMenu{
+.listingImageMenu {
+    display: none;
 }
 
 .imageWidth {
-    width: 325px;
+    width: 100%;
 }
 
 .listingCardContainer {
