@@ -109,7 +109,15 @@ body{
 }
 
 .asideList {
-    margin: 20px 0;
+    margin: 10px 0;
+    grid-template-columns: auto 1fr auto;
+}
+
+.asideList p{
+    padding-right: 50px;
+}
+
+.asideListInfo{
     grid-template-columns: auto 1fr auto;
 }
 
