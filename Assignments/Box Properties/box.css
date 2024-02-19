@@ -1,0 +1,16 @@
+.paragraph{
+    background-color: bisque;
+    border: solid 2px black;
+    padding: 10px;
+}
+
+.image{
+    float: left;
+    border: solid 2px black;
+    margin: 10px;
+}
+
+.image:hover{
+    border: dashed 5px red;
+    padding: 10px;
+}
