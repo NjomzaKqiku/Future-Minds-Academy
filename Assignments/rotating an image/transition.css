@@ -1,0 +1,11 @@
+img{
+    width: 600px;
+    height: 600px;
+    transition-duration: 1000ms;
+    transition-property: all;
+}
+
+img:hover{
+    transform: rotate(720deg);
+    filter: blur(10px);
+}
