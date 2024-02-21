@@ -4,6 +4,11 @@ img{
     transition: 500ms filter, 500ms transform 500ms;
 }
 
+div{
+    display: flex;
+    justify-content: center;
+}
+
 img:hover{
     transform: rotate(720deg);
     filter: blur(10px);
