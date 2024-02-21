@@ -28,18 +28,17 @@ label {
     visibility: hidden;
     transform: translateY(3px);
     transition: transform .5s ease;
-
 }
 
 input:focus+label {
     visibility: visible;
     transform: translateY(0px);
-
 }
 
 button {
     padding: 0px 5px;
     background-color: blue;
+    transition-duration: ;
 }
 
 div{
@@ -48,7 +47,7 @@ div{
 }
 
 button:focus+img{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     animation: infinite;
 }
 
